@@ -18,14 +18,14 @@ Description:  An intelligent Bitcoin trend prediction system leveraging Machine 
 
 ## 2. هندسة البيانات والميزات (Data Engineering)
 لضمان دقة التحليل، لم نكتفِ ببيانات السعر الخام، بل قمنا باشتقاق ميزات رياضية (Features) تعكس سلوك السوق:
-![واجهة التطبيق](images\app_interface1.png)
+![واجهة التطبيق](images/app_interface1.png)
 
 *   **العائد اللحظي (Return):** لقياس نسبة التغير السعري بين يومين متتاليين.
     $$Return = \frac{Price_{today} - Price_{yesterday}}{Price_{yesterday}}$$
 *   **المتوسط المتحرك (MA_7):** لتنعيم البيانات وتقليل الضجيج السعري (Noise) خلال أسبوع.
 *   **معدل التذبذب (Volatility):** لقياس درجة المخاطرة في السوق.
  *نظراً لضخامة حجم البيانات الأولية التي كانت تعتمد على الفهرسة بالدقائق (Minute-level data)، اتخذت قراراً هندسياً بتحويلها إلى الفهرس اليومي (Daily Index) للأسباب التالية:*
-![واجهة التطبيق](images\app_interface2.png)
+![واجهة التطبيق](images/app_interface2.png)
 
 *   **تقليل الضجيج (Noise Reduction):** البيانات بالدقائق تحتوي على تذبذبات عشوائية لا تخدم التنبؤ طويل الأمد.
 
@@ -34,7 +34,7 @@ Description:  An intelligent Bitcoin trend prediction system leveraging Machine 
 *   **تنسيق المؤشرات:**  ليتماشى السعر مع المؤشرات الفنية مثل المتوسط المتحرك (Moving Average) الذي يُحسب عادةً بشكل يومي.
 
 ## 3. النماذج الخوارزمية (Modeling Strategy)
-![واجهة التطبيق](images\app_interface7.png)
+![واجهة التطبيق](images/app_interface5.png)
 
 تمت المقارنة بين ثلاث منهجيات لضمان اختيار الحل الأمثل:
 1.  **الاستحدار اللوجستي (Logistic Regression):** استخدم كنموذج تصنيف أساسي لتحديد الاتجاه (صعود/هبوط).
@@ -42,7 +42,7 @@ Description:  An intelligent Bitcoin trend prediction system leveraging Machine 
 3.  **نموذج ARIMA:** لتحليل السلاسل الزمنية (Time Series) بالاعتماد على الأنماط التاريخية.
 
 ## 4. النتائج والتحليل الإحصائي
-![واجهة التطبيق](images\app_interface7.png)
+![واجهة التطبيق](images/app_interface6.png)
 
 أظهرت النتائج تبايناً منطقياً يعكس طبيعة الأسواق المالية:
 
@@ -51,7 +51,7 @@ Description:  An intelligent Bitcoin trend prediction system leveraging Machine 
 *   **التحليل الهندسي:** تشير النتائج إلى أن سعر البيتكوين يتبع نمط "السير العشوائي" (Random Walk)، مما يجعل التنبؤ بالاتجاه تحدياً يتطلب ميزات إضافية مثل تحليل الأخبار (Sentiment Analysis).
 
 ## 5. واجهة المستخدم والتنفيذ (Deployment)
-![واجهة التطبيق](images\app_interface8.png)
+![واجهة التطبيق](images/app_interface8.png)
 
 تم تطوير واجهة مستخدم تفاعلية باستخدام إطار عمل **Streamlit** لتمكين المستخدم من:
 *   إدخال بيانات السوق الحالية.
