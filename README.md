@@ -14,7 +14,7 @@ Description:  An intelligent Bitcoin trend prediction system leveraging Machine 
 ## 1. المقدمة (Introduction)
 يهدف هذا المشروع إلى استكشاف قدرة خوارزميات تعلم الآلة (Machine Learning) على التنبؤ باتجاهات العملات الرقمية. تم بناء نظام متكامل يبدأ من معالجة البيانات الضخمة وينتهي بواجهة مستخدم تفاعلية توفر "التوقعات كخدمة".
 
-![واجهة التطبيق](images\app_interface0.png)
+![واجهة التطبيق](images/app_interface0.png)
 
 ## 2. هندسة البيانات والميزات (Data Engineering)
 لضمان دقة التحليل، لم نكتفِ ببيانات السعر الخام، بل قمنا باشتقاق ميزات رياضية (Features) تعكس سلوك السوق:
